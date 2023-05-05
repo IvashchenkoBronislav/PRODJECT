@@ -1,0 +1,23 @@
+#whoWeAre{
+    display: flex;
+    justify-content: space-between;
+}
+
+#whoWeAre>img{
+    width: 705px;
+    height: 560px;
+}
+
+.info-case{
+    display: flex;
+    flex-direction: column;
+    max-width: 390px;
+    width: 100%;
+}
+
+#whoWeAre>.info-case>button{
+    width: 161px;
+    height: 44px;
+    padding:  10px 32px;
+    font-size: 14px;
+}

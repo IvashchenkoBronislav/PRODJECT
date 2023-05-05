@@ -1,0 +1,109 @@
+.our-benefits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:180px;
+    margin-bottom: 140px;
+}
+
+.our-benefits>.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-benefits>.title>h2{
+    margin-top: 8px;
+    font-size: 46px;
+    font-weight: 900;
+    color: #1E212C;
+}
+
+.our-benefits>.title>span{
+    font-size: 16px;
+    font-weight: 700;
+    color: #1E212C;
+}
+
+.our-benefits-suport{
+    display: flex;
+    max-width: 1228px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.our-benefits-suport_case{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 307px;
+    height: 46px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: #9A9CA5;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.our-benefits-suport_case>span::before{
+    position: relative;
+    top: 2px;
+}
+
+.our-benefits-suport_case:hover{
+    border: 1px solid #FF3F3A;
+    border-radius: 4px; 
+    color: #FF3F3A;
+}
+
+.our-benefits-suport_info0::before{
+    content: url(../img/ourbenefits/star0.svg);
+}
+.our-benefits-suport_case:hover>.our-benefits-suport_info0::before{
+    content: url(../img/ourbenefits/star1.svg);
+}
+.our-benefits-suport_info1::before{
+    content: url(../img/ourbenefits/shepe0.svg);
+}
+
+.our-benefits-suport_case:hover>.our-benefits-suport_info1::before{
+    content: url(../img/ourbenefits/shape1.svg);
+}
+
+.our-benefits-suport_info3::before{
+    content: url(../img/ourbenefits/call0.svg);
+}
+.our-benefits-suport_case:hover>.our-benefits-suport_info3::before{
+    content: url(../img/ourbenefits/call1.svg);
+}
+.our-benefits-suport_info2::before{
+    content: url(../img/ourbenefits/community0.svg);
+}
+
+.our-benefits-suport_case:hover>.our-benefits-suport_info2::before{
+    content: url(../img/ourbenefits/community1.svg);
+}
+
+.our-benefits-inform{
+    display: flex;   
+    align-items: center;
+}
+
+.our-benefits-inform>div>span:first-child{
+    display: block;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 130%;
+    margin-bottom: 24px;
+}
+
+.our-benefits-inform>div>span:last-child{
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+}

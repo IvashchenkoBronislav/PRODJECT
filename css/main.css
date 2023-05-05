@@ -1,0 +1,163 @@
+*{
+    font-family: 'Lato', sans-serif;;
+}
+
+main{
+    max-width: 1230px;
+}
+
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+
+#mainInfo{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center
+}
+
+.main-info{
+    width: 496px;
+    height: 249px;
+}
+
+.main-info>div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-info>img{
+    width: 602px;
+    height: 551px;
+}
+
+.main-info-stat{
+    position: relative;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+.main-info-stat>div{
+    display: flex;
+    align-items: center;
+}
+
+.main-info-stat>div>h2{
+    margin-right: 12px;
+}
+
+.button-case-main{
+    display: flex;
+    justify-content: space-between;
+    max-width: 373px;
+    width: 100%;
+}
+
+.button-case-main>button:last-child{
+    width: 148px;
+}
+
+.button-case-main>button:last-child{
+    width: 201px;
+}
+
+.button-gradient {
+    position: relative;
+    padding: 20px 40px;
+    background: #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 16px;
+    color: #F75E05;
+    border: none;
+}
+
+.button-gradient:hover {
+    color: #ffffff;
+   background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+}
+
+
+  
+.button-gradient::before {
+    content: "";
+    position: absolute;
+    top: -1.5px;
+    left: -1.5px;
+    right: -1.5px;
+    bottom: -1.5px;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    z-index: -1;
+}
+
+.button-sercle{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 84px;
+    cursor: pointer;
+}
+
+.button-sercle>span{
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#buttonSercle{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    max-width: 180px;
+    padding: 0;
+    border:none;
+}
+
+.button-sercle>img{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 32px;
+    left: 34px;
+    z-index: 3;
+}
+  
+.button-sercle_out{
+    position: relative;
+    top: -2px;
+    width: 84px;
+    height: 84px;
+    background: #FF3F3A;
+    border-radius: 100%;
+    opacity: 0.0;
+    transition: all 0.5s;
+    /* background:transparent; */
+}
+
+.button-sercle_ins{
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    width: 52px;
+    height: 52px;
+    border-radius: 100%;
+    background: #FF3F3A;
+    z-index: 2;
+}
+
+
+.button-sercle:hover>.button-sercle_out{
+    opacity: 0.12;
+}
