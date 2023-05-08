@@ -1,0 +1,98 @@
+.our-blog{
+    margin-top: 120px;
+    margin-bottom: 180px;
+}
+
+.our-blog>div{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.our-blog>div>.title>span{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.our-blog>div>.title>h2{
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    margin: 8px 0 0 0;
+}
+
+.our-blog>div>.button-gradient{
+    height: 52px;
+    padding: 5px 40px;
+}
+
+.post-conteiner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.post-case{
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+}
+
+.post-case>a>button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    cursor: pointer;
+    border: transparent;
+    background: transparent;
+    padding: 0;
+}
+
+.post-case>a>button::after{
+    padding-left: 10px;
+    content: url(../img/posts/Line.svg);
+}
+
+.post-case_poster{
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.post-case_poster>div{
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 1px 8px;
+}
+
+.post-case_data{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #787A80;
+}
+
+.post-case_info{
+
+}
+
+.post-case_info>span:first-child{
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;    
+    color: #1E212C;
+    margin-bottom: 8px;
+}
+
+.post-case_info>span:last-child{
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+    margin-bottom: 16px;
+}
