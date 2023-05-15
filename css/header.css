@@ -1,13 +1,14 @@
 header{
-
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-around;
     max-width: 1230px;
     width: 100%;
     margin: 20px 0 0 0;
-    
+    z-index: 3;
 }
+
 nav{
     display: flex;
     align-items: center;
@@ -21,23 +22,24 @@ nav>img{
 }
 
 .nav-bar{
-    position: relative;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 432px;
+    width: 432px;
 }
-.nav-bar>a>button{
-    border: none;
-    background: none;
+
+.nav-bar>a{
+    display: block;
+    height: 26px;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    height: 26px;
+    color:#424551;
+    text-decoration: none;
     transition: all 1s;
     cursor: pointer;
 }
 
-.nav-bar>a>button:hover{
+.nav-bar>a:hover{
 
    transform: scale(1.2);
 }

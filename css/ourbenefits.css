@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top:180px;
-    margin-bottom: 140px;
+    margin: 180px auto 140px;
+    
+    max-width: 1230px;
 }
 
 .our-benefits>.title{

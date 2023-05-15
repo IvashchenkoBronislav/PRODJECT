@@ -1,23 +1,56 @@
-#whoWeAre{
+.who-we-are{
     display: flex;
     justify-content: space-between;
+    max-width: 1230px;
+    margin: 180px auto 0;
+    background-image: url(../img/background/background-wwa.svg);
 }
 
-#whoWeAre>img{
+.whoWeAre>img{
     width: 705px;
     height: 560px;
 }
 
-.info-case{
+.who-we-are_info-case{
     display: flex;
     flex-direction: column;
     max-width: 390px;
     width: 100%;
 }
 
-#whoWeAre>.info-case>button{
+.who-we-are>.title>span{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #1E212C;
+}
+
+.who-we-are>.title>h2{
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1E212C;
+    margin-top: 8px;
+}
+
+.who-we-are_info-case>button{
     width: 161px;
     height: 44px;
     padding:  10px 32px;
     font-size: 14px;
+}
+
+.who-we-are_info-case>ul{
+    padding: 0 0 0 16px;
+}
+
+.who-we-are_info-case>ul>li{
+    padding-left:16px;
+    margin-bottom: 12px;
+}
+
+.who-we-are_info-case>ul>li::marker{
+    content:url(../img/dot.svg);
+    width: 15.33px;
+    height: 14.67px;
 }

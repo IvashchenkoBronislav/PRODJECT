@@ -14,21 +14,22 @@
     <link rel="stylesheet" href="./css/our-team.css">
     <link rel="stylesheet" href="./css/our-blog.css">
     <link rel="stylesheet" href="./css/subscribe.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <title>CreateX</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
             <img id="logo" src="./img/logo.svg" alt="" >
             <div class="nav-bar">
-                <a href=""><button>About Us</button></a>
-                <a href=""><button>Courses</button></a>
-                <a href=""><button>Events</button></a>
-                <a href=""><button>Blog</button></a>
-                <a href=""><button>Contacts</button></a>
+                <a href="#whoWeAre">About Us</a>
+                <a href="#courses">Courses</a>
+                <a href="#event">Events</a>
+                <a href="#blog">Blog</a>
+                <a href="#contacts">Contacts</a>
             </div>
         </nav>
         <div class="button-case-header">
@@ -40,9 +41,10 @@
         </div>
     </header>
     <main>
-        <div id="main">
-            <div id="mainInfo">
-                <div class="main-info">
+        <div class="main">
+            <div class="main-background"></div>
+            <div class="main-info">
+                <div class="main-info_case">
                     <div>
                         <button id="buttonSercle">
                             <div class="button-sercle">
@@ -85,11 +87,13 @@
                 </div>
             </div>
         </div>
-        <div id="whoWeAre">
+        <div class="who-we-are" id="whoWeAre">
             <img src="./img/image.png" alt="">
-            <div class="info-case">
-                <span>Who we are</h4>
-                <h2>Why Createx?</h1>
+            <div class="who-we-are_info-case">
+                <div class="title">
+                    <span>Who we are</h4>
+                    <h2>Why Createx?</h1>
+                </div>
                 <ul>
                     <li>A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
                     <li>Vulputate placerat amet pulvinar lorem nisl.</li>
@@ -101,7 +105,7 @@
                 <button class="button-gradient">More about us</button>
             </div>
         </div>
-        <div class="ready-to-learn">
+        <div class="ready-to-learn" id="courses">
             <div class="ready-to-learn_title-case">
                 <div class="title">
                     <span>Ready to learn?</span>
@@ -168,7 +172,6 @@
                 <div class="mentor-case">
                     <img src="./img/lector/image5.png" alt="">
                     <div class="mentor-case_info">
-                        <div class="mentor-case_info">
                         <span class="mentor-case_prof bg-color-bright-red">Design</span>
                         <span class="mentor-case_cuese">Graphic Design Basic</span>
                         <div>
@@ -200,69 +203,78 @@
                 <img src="./img/ourbenefits/illustration.svg" alt="">
             </div>
         </div>
-        <div class="our-event">
-            <div class="title">
-                <span>Our Events</span>
-                <h2>Lectures & workshops</h2>
-            </div>
-            <div class="our-event-case">
-                <div class="event">
-                    <div class="event_time">
-                        <time datetime="2023-08-05">05</time>
+        <div class="our-event" id="event">
+            <div class="our-event-background"></div>
+            <div class="our-event_conteiner">
+                <div class="title">
+                    <span>Our Events</span>
+                    <h2>Lectures & workshops</h2>
+                </div>
+                <div class="our-event-case">
+                    <div class="event">
                         <div>
-                            <time datetime="2023-08">August</time>
-                            <div>
-                                <time datetime="2023-08-05T11:00:00">11:00</time>
-                                -
-                                <time datetime="2023-08-05T14:00:00">14:00</time>
+                            <div class="event_time">
+                                <time datetime="2023-08-05">05</time>
+                                <div>
+                                    <time datetime="2023-08">August</time>
+                                    <div>
+                                        <time datetime="2023-08-05T11:00:00">11:00</time>
+                                        -
+                                        <time datetime="2023-08-05T14:00:00">14:00</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event_name">
+                                <span>Formation of the organizational structure of the company in the face of uncertainty.</span>
+                                <span>Onine master-class</span>
                             </div>
                         </div>
+                        <button class="button-gradient">View more</button>
                     </div>
-                    <div class="event_name">
-                        <span>Formation of the organizational structure of the company in the face of uncertainty.</span>
-                        <span>Onine master-class</span>
-                    </div>
-                    <button class="button-gradient">View more</button>
-                </div>
-                <div class="event">
-                    <div class="event_time">
-                        <time datetime="2023-07-24">24</time>
+                    <div class="event">
                         <div>
-                            <time datetime="2023-07">Jule</time>
-                            <div>
-                                <time datetime="2023-07-24T11:00:00">11:00</time>
-                                -
-                                <time datetime="2023-07-05T12:30:00">12:30</time>
+                            <div class="event_time">
+                                <time datetime="2023-07-24">24</time>
+                                <div>
+                                    <time datetime="2023-07">Jule</time>
+                                    <div>
+                                        <time datetime="2023-07-24T11:00:00">11:00</time>
+                                        -
+                                        <time datetime="2023-07-05T12:30:00">12:30</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event_name">
+                                <span>Building a customer service department. Best Practices.</span>
+                                <span>Onine lecture</span>
                             </div>
                         </div>
+                        <button class="button-gradient">View more</button>
                     </div>
-                    <div class="event_name">
-                        <span>Building a customer service department. Best Practices.</span>
-                        <span>Onine lecture</span>
-                    </div>
-                    <button class="button-gradient">View more</button>
-                </div>
-                <div class="event">
-                    <div class="event_time">
-                        <time datetime="2023-08-16">16</time>
+                    <div class="event">
                         <div>
-                            <time datetime="2023-07">Jule</time>
-                            <div>
-                                <time datetime="2023-07-16T10:00:00">10:00</time>
-                                -
-                                <time datetime="2023-07-16T12:30:00">12:30</time>
+                            <div class="event_time">
+                                <time datetime="2023-08-16">16</time>
+                                <div>
+                                    <time datetime="2023-07">Jule</time>
+                                    <div>
+                                        <time datetime="2023-07-16T10:00:00">10:00</time>
+                                        -
+                                        <time datetime="2023-07-16T12:30:00">12:30</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event_name">
+                                <span>Building a customer service department. Best Practices.</span>
+                                <span>Onine lecture</span>
                             </div>
                         </div>
+                        <button class="button-gradient">View more</button>
                     </div>
-                    <div class="event_name">
-                        <span>Building a customer service department. Best Practices.</span>
-                        <span>Onine lecture</span>
+                    <div class="more-event">
+                        <span>Do you want more?</span>
+                        <button class="button-gradient">Explore all events</button>
                     </div>
-                    <button class="button-gradient">View more</button>
-                </div>
-                <div class="more-event">
-                    <span>Do you want more?</span>
-                    <button class="button-gradient">Explore all events</button>
                 </div>
             </div>
         </div>
@@ -282,99 +294,101 @@
             <img class="certificate_img" src="./img/certificate.svg" alt="">
         </div>
         <div class="our-team">
-            <div class="head-our-team">
-                <div class="title">
-                    <span>Best tutors are all here</span>
-                    <h2>Meet our team</h2>
-                </div>
-                <div class="button-roundabout-nav">
-                    <button class="button-roundabout-nav_left"></button>
-                    <button class="button-roundabout-nav_right"></button>
-                </div>
-            </div>
-            <div class="roundabout">
-                <div class="roundabout-case">
-                    <div class="team-member">
-                        <img src="./img/our-team/team/members/members.png" alt="member">
-                        <!-- <div class="social-media">
-                            <img class="facebook" src="" alt="facebook">
-                            <img class="inst" src="" alt="inst">
-                            <img class="linkidin" alt="linkidin">
-                        </div> -->
+            <div class="our-team_conteiner">
+                <div class="head-our-team">
+                    <div class="title">
+                        <span>Best tutors are all here</span>
+                        <h2>Meet our team</h2>
                     </div>
-                    <div class="member-info">
-                        <span>Dianne Russell</span>
-                        <span>Founder and CEO</span>
+                    <div class="button-roundabout-nav">
+                        <button class="button-roundabout-nav_left"></button>
+                        <button class="button-roundabout-nav_right"></button>
                     </div>
                 </div>
-                <div class="roundabout-case">
-                    <div class="team-member">
-                        <img src="./img/our-team/team/members/members1.png" alt="member">
-                        <!-- <div class="social-media">
-                            <img class="facebook" src="" alt="facebook">
-                            <img class="inst" src="" alt="inst">
-                            <img class="linkidin" alt="linkidin">
-                        </div> -->
-                    </div>
-                    <div class="member-info">
-                        <span>Jerome Bell</span>
-                        <span>Founder and Program Director</span>
-                    </div>
-                </div>
-                <div class="roundabout-case">
-                    <div class="team-member">
-                        <img src="./img/our-team/team/members/members2.png" alt="member">
-                        <!-- <div class="social-media">
-                            <img class="facebook" src="" alt="facebook">
-                            <img class="inst" src="" alt="inst">
-                            <img class="linkidin" alt="linkidin">
-                        </div> -->
-                    </div>
-                    <div class="member-info">
-                        <span>Kristin Watson</span>
-                        <span>Founder and CEO</span>
-                    </div>
-                </div>
-                <div class="roundabout-case">
-                    <div class="team-member">
-                        <img src="./img/our-team/team/members/members3.png" alt="member">
-                        <!-- <div class="social-media">
-                            <img class="facebook" src="" alt="facebook">
-                            <img class="inst" src="" alt="inst">
-                            <img class="linkidin" alt="linkidin">
-                        </div> -->
-                    </div>
-                    <div class="member-info">
-                        <span>Marvin McKinney</span>
-                        <span>PM, Curator of Management Course</span>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonials">
-                <div class="title">
-                    <span>TESTIMONIALS</span>
-                    <h2>What our students say</h2>
-                </div>
-                <div class="testimonials-roundabout">
-                    <button class="button-roundabout-nav_left"></button>
-                    <div class="case-testionials">
-                        <span class="case-testionials_text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
-                        </span>
-                        <div>
-                            <img src="./img/our-team/team/testimonials/image (1).svg" alt="">
-                            <div>
-                                <span>Eleanor Pena</span>
-                                <span>Position, Course</span>
-                            </div>
+                <div class="roundabout">
+                    <div class="roundabout-case">
+                        <div class="team-member">
+                            <img src="./img/our-team/team/members/members.png" alt="member">
+                            <!-- <div class="social-media">
+                                <img class="facebook" src="" alt="facebook">
+                                <img class="inst" src="" alt="inst">
+                                <img class="linkidin" alt="linkidin">
+                            </div> -->
                         </div>
-                   </div>
-                   <button class="button-roundabout-nav_right"></button>
+                        <div class="member-info">
+                            <span>Dianne Russell</span>
+                            <span>Founder and CEO</span>
+                        </div>
+                    </div>
+                    <div class="roundabout-case">
+                        <div class="team-member">
+                            <img src="./img/our-team/team/members/members1.png" alt="member">
+                            <!-- <div class="social-media">
+                                <img class="facebook" src="" alt="facebook">
+                                <img class="inst" src="" alt="inst">
+                                <img class="linkidin" alt="linkidin">
+                            </div> -->
+                        </div>
+                        <div class="member-info">
+                            <span>Jerome Bell</span>
+                            <span>Founder and Program Director</span>
+                        </div>
+                    </div>
+                    <div class="roundabout-case">
+                        <div class="team-member">
+                            <img src="./img/our-team/team/members/members2.png" alt="member">
+                            <!-- <div class="social-media">
+                                <img class="facebook" src="" alt="facebook">
+                                <img class="inst" src="" alt="inst">
+                                <img class="linkidin" alt="linkidin">
+                            </div> -->
+                        </div>
+                        <div class="member-info">
+                            <span>Kristin Watson</span>
+                            <span>Founder and CEO</span>
+                        </div>
+                    </div>
+                    <div class="roundabout-case">
+                        <div class="team-member">
+                            <img src="./img/our-team/team/members/members3.png" alt="member">
+                            <!-- <div class="social-media">
+                                <img class="facebook" src="" alt="facebook">
+                                <img class="inst" src="" alt="inst">
+                                <img class="linkidin" alt="linkidin">
+                            </div> -->
+                        </div>
+                        <div class="member-info">
+                            <span>Marvin McKinney</span>
+                            <span>PM, Curator of Management Course</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div class="testimonials">
+                    <div class="title">
+                        <span>TESTIMONIALS</span>
+                        <h2>What our students say</h2>
+                    </div>
+                    <div class="testimonials-roundabout">
+                        <button class="button-roundabout-nav_left"></button>
+                        <div class="case-testionials">
+                            <span class="case-testionials_text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                            </span>
+                            <div class="case-testionials_inf">
+                                <img src="./img/our-team/team/testimonials/image (1).svg" alt="">
+                                <div>
+                                    <span>Eleanor Pena</span>
+                                    <span>Position, Course</span>
+                                </div>
+                            </div>
+                    </div>
+                    <button class="button-roundabout-nav_right"></button>
+                    </div>
+                </div>
+           </div>
         </div>
-        <div class="our-blog">
-            <div>
+        <div class="our-blog" id="blog">
+            <div class="our-blog_conteiner">
                 <div class="title">
                     <span>Our blog</span>
                     <h2>Latest posts</h2>
@@ -468,52 +482,59 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div>
-            <div>
-                <img src="" alt="logo">
+    <footer id="contacts">
+        <div class="footer-case">
+            <div class="footer-info">
+                <img src="./img/footer/footer-logo.svg" alt="logo" class="footer-logo">
                 <span>Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country. </span>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
+                <nav class="footer-social">
+                    <a href="https://uk-ua.facebook.com" class="footer-facebook" target="_blank"></a>
+                    <a href="https://twitter.com/?lang=uk" class="footer-twitter" target="_blank"></a>
+                    <a href="https://www.youtube.com" class="footer-youtobe" target="_blank"></a>
+                    <a href="https://web.telegram.org/k/" class="footer-telegram" target="_blank"></a>
+                    <a href="https://www.instagram.com" class="footer-instogram" target="_blank"></a>
+                    <a href="https://www.linkedin.com/feed/" class="footer-linked" target="_blank"></a>
+                </nav>
             </div>
-            <nav>
+            <nav class="footer-nav">
                 <span>SITE MAP</span>
-                <a href="">About Us</a>
-                <a href="">Courses</a>
-                <a href="">Events</a>
-                <a href="">Blog</a>
-                <a href="">Contacts</a>
+                <a href="#whoWeAre">About Us</a>
+                <a href="#courses">Courses</a>
+                <a href="#event">Events</a>
+                <a href="#blog">Blog</a>
+                <a href="#contacts">Contacts</a>
             </nav>
-            <div>
+            <nav class="footer-nav">
                 <span>COURSES</span>
-                <a href="">Marketing</a>
-                <a href="">Management</a>
-                <a href="">HR & Recruting</a>
-                <a href="">Design</a>
-                <a href="">Development</a>
-            </div>
-            <div>
+                <a href="#">Marketing</a>
+                <a href="#">Management</a>
+                <a href="#">HR & Recruting</a>
+                <a href="#">Design</a>
+                <a href="#">Development</a>
+            </nav>
+            <div class="footer-contact">
                 <span>CONTACT US</span>
-                <a href="tel:+(405) 555-0128">(405) 555-0128</a>
-                <a href="mailto:hello@createx.com"></a>
+                <a href="tel:+(405) 555-0128" name="phoneContact">(405) 555-0128</a>
+                <a href="mailto:hello@createx.com" name="emailContact">hello@createx.com</a>
             </div>
-            <div>
+            <div class="footer-contact-sign">
                 <span>SIGN UP TO OUR NEWSLETTER</span>
-                <input type="text" placeholder="Email address">
+                <form action="">
+                    <input type="email" name="" id="" placeholder="Email address">
+                    <button type="submit"></button>
+                </form>
                 <span>*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</span>
             </div>
         </div>
-        <div>
-            <span>© All rights reserved.Made with</span>
-            <img src="" alt="hard">
-            <span>by Createx Studio</span>
-            <a href=""> GO TO TOP</a>
+        <div class="footer-bottom-border">
+            <div class="footer-bottom-border_case">
+                <div>
+                    <span>© All rights reserved.Made with</span>
+                    <img src="./img/footer/Heart.svg" alt="hard">
+                    <span>by Createx Studio</span>
+                </div>
+                <a href="#header"> GO TO TOP</a>
+            </div>
         </div>
     </footer>
 </body>

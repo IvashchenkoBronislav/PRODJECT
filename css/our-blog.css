@@ -3,11 +3,13 @@
     margin-bottom: 180px;
 }
 
-.our-blog>div{
+.our-blog_conteiner{
     display: flex;
     justify-content: space-between;
-
+    max-width: 1230px;
+    margin: 0 auto;
 }
+
 
 .our-blog>div>.title>span{
     font-weight: 700;
@@ -30,7 +32,8 @@
 .post-conteiner{
     display: flex;
     justify-content: space-between;
-    margin-top: 60px;
+    max-width: 1230px;
+    margin: 60px auto 0;
 }
 
 .post-case{

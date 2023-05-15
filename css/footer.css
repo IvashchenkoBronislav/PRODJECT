@@ -1,0 +1,262 @@
+footer{
+    width: 100%;
+    background: #1E212C;
+}
+
+.footer-logo{
+    width: 104.5px;
+    height: 19.6px;
+    margin-bottom:25px ;
+}
+
+.footer-case{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1230px;
+    margin: 80px auto 60px;
+}
+
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-nav>a{
+    color: #FFFFFF;
+    opacity: 0.6;
+    text-decoration: none;
+    text-align: start;
+    padding-bottom:8px ;
+}
+
+.footer-nav>a:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.footer-nav>span{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color:#FFFFFF;
+    margin-bottom: 12px;
+}
+
+.footer-info{
+    max-width: 279px;
+    width: 100%;
+}
+
+.footer-info>span{
+    display: block;
+    width: 100%;
+    max-width: 279px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.6;
+    
+}
+
+.footer-social{
+    display: flex;
+    justify-content: space-between;
+    max-width: 244px;
+}
+
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contact>span{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.footer-contact>a{
+    color: #FFFFFF;
+    opacity: 0.6;
+    text-decoration: none;
+    text-align: start;
+    padding-bottom:8px;
+}
+
+.footer-contact>a[name="phoneContact"]::before{
+    position: relative;
+    top: 2px;
+    padding-right: 10px;
+    content: url(../img/footer/iPhone.svg);
+}
+
+.footer-contact>a[name="emailContact"]::before{
+    position: relative;
+    top: 2px;
+    padding-right: 10px;
+    content: url(../img/footer/Mail.svg);
+}
+
+.footer-contact-sign{
+    display: flex;
+    flex-direction: column;
+    max-width: 286px;
+    width: 100%;
+}
+
+.footer-contact-sign>form{
+    position: relative;
+}
+
+.footer-contact-sign>form>button{
+    position: absolute;
+    top: 8px;
+    right: -10px;
+}
+
+.footer-contact-sign>span:first-child{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.footer-contact-sign>span:last-child{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    margin-top: 12px;
+    color: #FFFFFF;
+}
+
+.footer-contact-sign>form>input{
+    max-width: 286px;
+    width: 100%;
+    background: #ffffff20;
+    outline: none;
+    padding: 9px 12px;
+    border: 1px solid #ffffff33;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.footer-contact-sign>form>input::placeholder{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.footer-contact-sign>form>button{
+    border:1px solid transparent;
+    background: transparent;
+    cursor: pointer;
+}
+
+.footer-contact-sign>form>button::before{
+    content: url(../img/footer/Right.svg);
+    opacity: 0.6;
+}
+
+
+.footer-contact-sign>form>button:hover::before{
+    opacity: 1;
+}
+
+.footer-facebook::before{
+    content: url(../img/footer/facebook.svg);
+    opacity: 0.6;
+}
+
+.footer-facebook:hover::before{
+    content: url(../img/footer/facebook.svg);
+    opacity: 1;
+}
+
+
+.footer-twitter::before{
+    content: url(../img/footer/Twitter.svg);
+    opacity: 0.6;
+}
+
+.footer-twitter:hover::before{
+    opacity: 1;
+}
+
+.footer-youtobe::before{
+    content: url(../img/footer/youtube_act.svg);
+    opacity: 0.6;
+}
+
+.footer-youtobe:hover::before{
+    opacity: 1;
+}
+
+.footer-telegram::before{
+    content: url(../img/footer/telegram.svg);
+    opacity: 0.6;
+}
+
+.footer-telegram:hover::before{
+    opacity: 1;
+}
+
+.footer-instogram::before{
+    content: url(../img/footer/Instagram.svg);
+    opacity: 0.6;
+}
+
+.footer-instogram:hover::before{
+    opacity: 1;
+}
+
+
+.footer-linked::before{
+    content: url(../img/footer/Linked-In.svg);
+    opacity: 0.6; 
+}
+
+.footer-linked:hover:before{
+    opacity: 1; 
+}
+
+.footer-bottom-border{
+    background: #ffffff10;
+}
+
+.footer-bottom-border_case{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width:1230px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.footer-bottom-border_case>a{
+    color: #FFFFFF;
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.footer-bottom-border_case>a:hover{
+    opacity: 1;
+}
+
+.footer-bottom-border_case>div>span{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.footer-bottom-border_case>div>img{
+    position: relative;
+    top: 3px;
+}
